@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/*Styles to remove all spaces/gaps on the page initially*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Montserrat;
+}
+a {
+  text-decoration: none;
+  /* color: #8a8a8a; */
+  color: #6e6e6e;
+}
+
+/* Navbar Styles */
+/* What I want the clickble links to look like when I hover over them. */
+.navLinkWrapper a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
+
+/* The nav wrapper containing the right and left sides. */
+.navWrapper {
+/* display:flex defines a flex container so the items go from left to right by default  */
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 20px;
+}
+
+/* The left side of the nav bar */
+#logo{
+    max-width: 28px;
+    max-height: 28px;
+    margin-right: 5px;
+  
+}
+#logo2{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    width: 50%;
+    display: block;
+}
+.left-side {
+    display: flex;
+    /* font-family: "Oswald",sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: .7em;
+    font-size: 1.5em;
+    line-height: 1.2;
+    color: #6e6e6e;
+
+}
+
+
+/* The right side of the nav bar */
+.right-side {
+    display: flex;
+    font-size: 1.3em;
+
+}
+.navWrapper > .right-side > div{
+   margin-right: 10px; 
+}
+
+#content-wrapper{
+    margin-top: -50px;
+}
+/* Content Wrapper */
+.content-wrapper {
+box-sizing: content-box;
+max-width: 740px;
+margin: 0 auto;
+padding: 3.5em 1.75em;
+}
+
+/* Blog text styling */
+.article{
+    display: table;
+    border-style:solid ;
+    border-color: rgba(62, 65, 65, 0.349);
+    /* border-radius: 5px; */
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.664);
+}
+
+.entry-title{
+    /* font-family: "Oswald",sans-serif; */
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: .7em;
+    font-size: 2.5em;
+    color: #6e6e6e;
+
+}
+
+.entry-content{
+    line-height: 1.75;
+    margin-top: .875em;
+    font-weight:700;
+}
+
+/* Footer styling */
+.footer{
+    display:flex;
+    justify-content: space-around;
+    max-width: 80%;
+    max-width: 740px;
+    margin: 0 auto;
+    /* margin-bottom: 20px; */
+    padding: 0.5em 1.75em;
+}
+.footerLinkWrapper a:hover{
+    color: black;
+    font-weight: 600;
+}
+.footerLinkWrapper p:hover{
+ color: black;
+    font-weight: 600;
+}
+
+
+
+
+
