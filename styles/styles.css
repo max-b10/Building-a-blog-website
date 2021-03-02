@@ -6,7 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* Universal html, anchor and link styles */
 html {
   font-size: 15px;
   font-family: Montserrat;
@@ -16,75 +16,150 @@ a {
   /* color: #8a8a8a; */
   color: #6e6e6e;
 }
-
-/* Navbar Styles */
-/* The nav wrapper containing the right and left sides. */
-.navWrapper {
-/* display:flex defines a flex container so the items go from left to right by default  */
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-  font-size: 20px;
-}
-
-/* What I want the clickable links to look like when I hover over them. */
-.navLinkWrapper a:hover {
+.link a:hover{
   color: black;
   border-bottom: 1px solid black;
-  font-weight: 600;
+  font-weight: 600; 
 }
 
-/* The left side of the nav bar */
+/* Universal Navbar Styles */
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    margin:5px;
+}
+/* Left side of Nav */
 #logo{
     max-width: 28px;
-    max-height: 28px;
+    max-height: 100%;
     margin-right: 5px;
-  
+  }
+.brand-items{
+    display: flex;
+    list-style:none;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+
+/* Right side of Nav */
+.nav-links{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 20px;
 }
 
-.left-side {
-    display: flex;
-    /* font-family: "Oswald",sans-serif; */
+/* Responsiveness */
+@media screen and (max-width: 768px){
+
+.line{
+    width: 30px;
+    height:3px;
+    background:black;
+    margin: 5px;
+}
+nav{
+    position:relative;
+}
+.hamburger{
+    position: absolute;
+    cursor:pointer;
+    right:5%;
+    top:50%;
+    transform: translate(-5%,-50%);
+}
+.nav-links{
+    position:fixed;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    /* display: none; */
+}
+}
+
+
+/* index.html */
+/* about-wrapper grid styling */
+.home-wrapper{
+   margin: 9em;
+   display: grid;
+   grid-template-columns: 30% 70%;
+   grid-gap: 1rem;
+   justify-content: center;
+}
+/* About right side */
+.home-right-side > .header{
+    color:black;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: .7em;
-    font-size: 1.5em;
-    line-height: 1.2;
-    color: #6e6e6e;
+    font-size: 1.7em;
+    margin-bottom: 40px;
+}
+
+.home-right-side{
+    max-width: 63%;
+}
+
+.homeImage{
+    border-radius: 750px;
+    /* max-height: 450px; */
 
 }
 
 
-/* The right side of the nav bar */
-.right-side {
-    display: flex;
-    font-size: 1.3em;
 
+/* Main container */
+.main-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+    "left-sidebar content content right-sidebar"
+    "left-sidebar content content right-sidebar"
+    "left-sidebar content content right-sidebar"
+    "left-sidebar content content right-sidebar";
 }
-.navWrapper > .right-side > div{
-   margin-right: 10px; 
+ .content{
+    grid-area: content;
+    padding: 2em;
+    
 }
+ #left-sidebar{
+    grid-area: left-sidebar;
+}
+ #right-sidebar{
+    grid-area: right-sidebar;
+}
+/* portfolio.html */
 
-#content-wrapper{
-    margin-top: -50px;
-}
 /* Content Wrapper */
 .content-wrapper {
 box-sizing: content-box;
 max-width: 740px;
 margin: 0 auto;
-padding: 3.5em 1.75em;
-}
-
-/* Blog text styling */
-.article{
-    display: table;
-    border-style:solid ;
+/* padding: 3.5em 1.75em; */
+border-style:solid ;
     border-color: rgba(62, 65, 65, 0.349);
-    /* border-radius: 5px; */
     padding: 20px;
     background-color: rgba(250, 235, 215, 0.664);
 }
+
+
 
 .entry-title{
     /* font-family: "Oswald",sans-serif; */
@@ -111,6 +186,8 @@ padding: 3.5em 1.75em;
     margin: 0 auto;
     /* margin-bottom: 20px; */
     padding: 0.5em 1.75em;
+    color: #6e6e6e;
+    
 }
 .footerLinkWrapper a:hover{
     color: black;
