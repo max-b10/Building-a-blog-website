@@ -18,14 +18,6 @@ a {
 }
 
 /* Navbar Styles */
-/* What I want the clickble links to look like when I hover over them. */
-.navLinkWrapper a:hover {
-  color: black;
-  border-bottom: 1px solid black;
-  font-weight: 600;
-}
-
-
 /* The nav wrapper containing the right and left sides. */
 .navWrapper {
 /* display:flex defines a flex container so the items go from left to right by default  */
@@ -35,6 +27,13 @@ a {
   font-size: 20px;
 }
 
+/* What I want the clickable links to look like when I hover over them. */
+.navLinkWrapper a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
 /* The left side of the nav bar */
 #logo{
     max-width: 28px;
@@ -42,15 +41,7 @@ a {
     margin-right: 5px;
   
 }
-#logo2{
-    max-width: 30px;
-    max-height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -30px;
-    width: 50%;
-    display: block;
-}
+
 .left-side {
     display: flex;
     /* font-family: "Oswald",sans-serif; */
@@ -128,6 +119,15 @@ padding: 3.5em 1.75em;
 .footerLinkWrapper p:hover{
  color: black;
     font-weight: 600;
+}
+#logo2{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    width: 50%;
+    display: block;
 }
 
 
