@@ -12,13 +12,14 @@ body{
 }
 html {
   font-size: 15px;
-  font-family: Montserrat;
+  font-family: "Oswald",sans-serif;
 }
 a {
   text-decoration: none;
   /* color: #8a8a8a; */
   color: #6e6e6e;
 }
+
 .link a:hover{
   color: black;
   border-bottom: 1px solid black;
@@ -116,7 +117,8 @@ nav{
     border-style:solid ;
     border-color: rgba(62, 65, 65, 0.349);
     padding: 20px;
-    background-color: rgba(250, 235, 215, 0.664);
+    /* background-color: rgba(250, 235, 215, 0.664); */
+    background-color: white;
 }
 
 .entry-title{
@@ -149,19 +151,76 @@ nav{
 }
 .contact-header{
     grid-area: contact-header;
-    margin: auto;
+    margin: 0 0 0 59px;
     padding:2rem;
     width: 80%;
 }
+.contact-para{
+    /* padding: 0 0 0 0; */
+    margin: 4px 0 ;
+}
 .left-side{
     grid-area: left-side;  
-    margin:0 auto;
+    margin:  0 0 0 60px;
+    padding: 2rem;
 }
+.contact-list{
+    margin: 2px 0;
+    padding: 2px 0;
+}
+.contact-list-item{
+    padding: 2px 0;
+    margin:2px 0;
+}
+
 .left-side li{
     list-style: none;
 }
 .right-side{
 grid-area: right-side;
+margin: 0 0 0 0;
+padding: 2rem;
+}
+/* Form styles */
+.form-container{
+    margin: 0 0 0 -28px;
+    padding: 0rem 2rem 2rem 2rem;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    padding: .6rem 1rem 1rem 0rem;
+    width: 50%;
+}
+.label{
+    padding: 5px 0;
+}
+.input{
+    line-height: 1.7rem;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.37);
+    border-width: 1.2px;
+    padding: 0 3px;
+}
+#message{
+    margin:2px 0;
+    height:100px;
+}
+.form-button{
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 5px 7.5px;
+    margin: 10px 0;
+    color: #000;
+    background-color: #6e6e6e61;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.37); 
+    border-width: 1.33px;
+}
+.form-button:hover{
+    background-color:  #6e6e6e71; ;
 }
 
 /* Footer styling */
@@ -206,7 +265,7 @@ to the hamburger menu  */
     background:black;
     margin: 5px;
 }
-nav{
+.nav{
     position:relative;
 }
 .brand-text{
@@ -216,7 +275,7 @@ nav{
     position: absolute;
     cursor:pointer;
     right:5%;
-    top:50%;
+    top:5%;
     transform: translate(-5%,-50%);
 }
 .nav-links{
@@ -224,7 +283,7 @@ nav{
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    /* display: none; */
+    display: none;
 }
 
 
@@ -247,6 +306,7 @@ nav{
  .content{
     grid-area: content;
     padding: 2em;
+    margin: 0 0 0 30px;
 }
 #entry{
     line-height: 1.4rem;
@@ -295,6 +355,34 @@ display: none;
     margin-top: .875em;
     font-weight:400;
 }
+/* contact.html styles */
+
+.contact-wrapper{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr .5fr;
+    grid-template-areas:
+    "contact-header"
+    /* "left-side"  */
+    "right-side"
+   
+}
+.right-side{
+grid-area: right-side;
+margin: 0 0 0 60px;
+padding: 2rem;
+}
+.left-side{
+    display: none;
+
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    padding: .6rem 1rem 1rem 0rem;
+    width: 100%;
+}
 
 .footer{
     font-size: 10px;
@@ -311,6 +399,9 @@ and (max-width: 767px)
 
 {
     /* Nav Bar */
+    .nav{
+        width: auto;
+    }
     .yccmf{
     font-size: 13px; 
  }
@@ -322,6 +413,7 @@ and (max-width: 767px)
 }
  .hamburger{
      max-height: 2rem;
+     top: 5%;
  }
     #logo{
     max-width: 20px;
@@ -386,6 +478,18 @@ and (max-width: 767px)
     margin-top: .875em;
     font-weight:400;
 }
+
+.contact-wrapper{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr .5fr;
+    grid-template-areas:
+    "contact-header"
+    /* "left-side"  */
+    "right-side"
+   
+}
  .footer{
      max-width: 10rem;
      margin: 15px auto;
@@ -408,6 +512,7 @@ and (max-width: 424px){
 }
  .hamburger{
      max-height: 2rem;
+     top: 5%;
  }
     #logo{
     max-width: 20px;
@@ -469,7 +574,6 @@ and (max-width: 424px){
 }
 /* Small Mobile - Medium Mobile */
 @media screen 
-and (min-width:320px)
 and (max-width: 374px){
     /* Nav Bar */
     .brand-items{
@@ -483,6 +587,7 @@ and (max-width: 374px){
 }
  .hamburger{
      max-height: 2rem;
+     top: 5%;
  }
     #logo{
     max-width: 20px;
