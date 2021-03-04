@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav>
+    <nav class="nav">
       <div class="navLeft">
         <ul class="brand-items">
           <li>
@@ -47,64 +47,97 @@
     <!-- Main Content  -->
     <main>
       <div class="contact-wrapper">
-      <div class="contact-header">
+        <div class="contact-header">
           <h1 id="contact-title">Contact</h1>
-          <p id="contact-para">
+          <p class="contact-para">
             Let's talk! I’m available via email which you can access through
-            filling out the boxes below.  
+            filling out the boxes below.
           </p>
-          <p>Hope to hear from you!</p>
+          <p class="contact-para">Hope to hear from you!</p>
         </div>
-      <div class="left-side">
-        <div>
-          <h2>Get in touch</h2>
-          <ul>
-            <li><a href="#"></a>fffletch@icloud.com</li>
-            <li><a href="#"></a>fffletch@linkedin.com</li>
-          </ul>
+        <div class="left-side">
+          <div>
+            <h2 class="left-side-header">Get in touch</h2>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <a href="#"></a>fffletch@icloud.com
+              </li>
+              <li class="contact-list-item">
+                <a href="#"></a>fffletch@linkedin.com
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="right-side">
-        <div>
-          <h2>Send me a message</h2>
-        </div>
+        <div class="right-side">
+          <div id="right-side-title">
+            <h2>Send me a message</h2>
+          </div>
 
-        <div class="form-container">
-          <form action="">
-          <div class="name-field">
-            <label for="name">Name (required)</label>
-            <input type="text" name="name" id="name" placeholder="Enter name here" required/>
-          </div>
-          <div class="email-field">
-            <label for="email">Email (required)</label>
-            <input type="text" name="email" id="email" placeholder="Enter email here" required/>
-          </div>
-          <div class="website-field">
-            <label for="website">Website (optional)</label>
-            <input type="text" name="website" id="website" placeholder="Enter website url here" />
+          <div class="form-container">
+            <form action="">
+              <div id="name-field" class="input-field">
+                <label class="label" id="name-label" for="name"
+                  >Name (required)</label
+                >
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter name here"
+                  required
+                />
+              </div>
+              <div id="email-field" class="input-field">
+                <label class="label" id="name-label" for="email"
+                  >Email (required)</label
+                >
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email here"
+                  required
+                />
+              </div>
+              <div id="website-field" class="input-field">
+                <label class="label" id="name-label" for="website"
+                  >Website (optional)</label
+                >
+                <input
+                  class="input"
+                  type="text"
+                  name="website"
+                  id="website"
+                  placeholder="Enter website url here"
+                />
+              </div>
+              <div id="message-field" class="input-field">
+                <label class="label" id="name-label" for="message"
+                  >Message (required)</label
+                >
+                <textarea
+                  maxlength="500"
+                  class="input"
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Enter message here"
+                ></textarea>
+              </div>
+              <button class="form-button" type="submit">Submit</button>
+            </form>
           </div>
         </div>
-       </div>
       </div>
     </main>
 
-    <div id="footer-logo">
-      <img src="/images/fletchtree.png" alt="logo" class="logo" id="logo2" />
-    </div>
     <div class="footer">
       <div class="footerLinkWrapper link">
         <a href="index.html">YCCMF</a>
       </div>
-
-      <div class="footerLinkWrapper">
-        <p>Uncategorised</p>
-      </div>
-
-      <div class="footerLinkWrapper link">
-        <a href="#">Leave a comment</a>
-      </div>
-
       <div class="footerLinkWrapper">
         <p>'insert date'</p>
       </div>
