@@ -1,1 +1,1 @@
-# First attemp at building a responsive website.
+# First attempt at building a responsive website.
